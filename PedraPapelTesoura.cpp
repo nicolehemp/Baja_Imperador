@@ -82,33 +82,17 @@ void condicaoVitoria(char j, int c) {
     //vitoria do jogador
     if (j == 'r' && c == 3) {
         std::cout<<"\n\n"YEL"VOCE GANHOU! :)"RESET"";
-    }
-    if (j == 'p' && c == 1) {
+    } else if (j == 'p' && c == 1) {
         std::cout<<"\n\n"YEL"VOCE GANHOU! :)"RESET"";
-    }
-    if(j == 's' && c == 2) {
+    } else if(j == 's' && c == 2) {
         std::cout<<"\n\n"YEL"VOCE GANHOU! :)"RESET"";    
-    }
-
-    //vitoria do computador
-    if (c == 1 && j == 's') {
+    } else if (c == 1 && j == 's') { //vitoria do comp
     std::cout<<"\n\n"MAG"VOCE PERDEU! :("RESET"";
-    }
-    if (c == 2 && j == 'r') {
+    } else if (c == 2 && j == 'r') {
         std::cout<<"\n\n"MAG"VOCE PERDEU! :("RESET"";
-    }
-    if(c == 3 && j == 'p') {
+    } else if(c == 3 && j == 'p') {
         std::cout<<"\n\n"MAG"VOCE PERDEU! :("RESET"";    
-    }
-
-    //empate
-    if (c == 1 && j == 'r') {
-        std::cout<<"\n\n"CYN"EMPATE :/"RESET"";
-    }
-    if (c == 2 && j == 'p') {
-        std::cout<<"\n\n"CYN"EMPATE :/"RESET"";
-    }
-    if (c == 3 && j == 's') {
+    } else { //empate
         std::cout<<"\n\n"CYN"EMPATE :/"RESET"";
     }
 
